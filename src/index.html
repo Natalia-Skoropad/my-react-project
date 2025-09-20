@@ -1,0 +1,39 @@
+<meta name="color-scheme" content="light dark" />
+<script>
+    (function () {
+        try {
+            var KEY = "theme"; // ВАЖЛИВО: той самий ключ, що й у React
+            var saved = localStorage.getItem(KEY);
+            var theme = saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            document.documentElement.dataset.theme = theme; // <html data-theme="dark|light">
+        } catch (e) {
+            /* no-op */
+        }
+    })();
+</script>
+
+<style>
+    /* Критичні стилі no-FOUC */
+    :root {
+        color-scheme: light;
+    }
+
+    :root[data-theme="dark"] {
+        color-scheme: dark;
+    }
+
+    html,
+    body {
+        margin: 0;
+    }
+
+    body {
+        background: #fafafa;
+        color: #3f3f46;
+    }
+
+    :root[data-theme="dark"] body {
+        background: #18181b;
+        color: #e4e4e7;
+    }
+</style>

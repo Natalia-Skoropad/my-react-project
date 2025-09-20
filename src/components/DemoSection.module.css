@@ -1,0 +1,22 @@
+.section {
+  padding: var(--section-padding);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.title {
+  margin: 0 0 8px;
+  font-weight: 400;
+  font-size: var(--section-heading-size);
+  color: var(--color-heading);
+}
+
+.note {
+  margin: 0 0 12px;
+  color: var(--color-note);
+  font-size: var(--section-note-size);
+}
+
+.content {
+  display: grid;
+  gap: 12px;
+}

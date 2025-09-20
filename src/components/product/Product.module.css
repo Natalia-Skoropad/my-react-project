@@ -1,0 +1,31 @@
+.card {
+  margin-bottom: 24px;
+}
+
+.picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.picture:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #2563eb;
+}
+
+.h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 6px;
+  color: var(--color-heading);
+}

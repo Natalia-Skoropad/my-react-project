@@ -1,0 +1,58 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+
+  color: white;
+  transition: background 0.2s ease;
+}
+
+.primary {
+  background-color: royalblue;
+}
+.primary:hover {
+  background-color: rgb(89, 124, 228);
+}
+
+.secondary {
+  background-color: seagreen;
+}
+.secondary:hover {
+  background-color: rgb(73, 146, 105);
+}
+
+.h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: royalblue;
+}
+
+.message {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 18px;
+  font-weight: 400;
+  color: #ddd;
+
+  margin: 0;
+  transition: opacity 0.2s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.messageHidden {
+  opacity: 0;
+  visibility: hidden;
+}

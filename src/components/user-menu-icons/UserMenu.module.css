@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon {
+  color: seagreen;
+}
+
+.h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #2563eb;
+}

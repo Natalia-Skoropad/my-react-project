@@ -1,0 +1,21 @@
+/* The block to the right of the buttons always takes up space. */
+.message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+
+  /* Hidden, but location saved - content does not jump */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.message.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon {
+  font-size: 20px;
+}

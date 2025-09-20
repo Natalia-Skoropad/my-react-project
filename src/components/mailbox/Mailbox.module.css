@@ -1,0 +1,23 @@
+.h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #2563eb;
+}
+
+.button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  margin-right: 10px;
+  color: white;
+  background-color: royalblue;
+
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background-color: rgb(89, 124, 228);
+}
