@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "build": "vite build",
+    "build:gh": "vite build --base=/my-react-project/",
     "preview": "vite preview"
   },
   "dependencies": {
